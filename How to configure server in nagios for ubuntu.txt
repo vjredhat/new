@@ -1,0 +1,28 @@
+server pe ye run karna hai
+
+  23  cat /etc/os-release
+   24  clear
+   25  apt install -y nagios-nrpe-server nagios-plugins
+   26  ufw allow 5666/tcp
+   27  ufw reload
+   28  cd /etc/nagios
+   29  ls
+   30  vi nrpe.cfg
+   31  cp nrpe.cfg nrpe.cfg-bak
+   32  vi nrpe.cfg
+   33  > nrpe.cfg
+   34  vi nrpe.cfg
+   35  systemctl restart nagios-nrpe-server.service
+   36  cd
+   37  systemctl status  nagios-nrpe-server.service
+   38  history
+
+
+
+alerts server pe 
+ cd /usr/local/nagios/etc/servers/
+  998  vi ha-group.mahahosting.com.cfg (aise file banani hai aur iske ander file upload karna hai linux.gipdns.cfg aur search karke hostname replace karna hai
+  999  systemctl restart nagios
+
+
+
